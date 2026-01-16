@@ -4,7 +4,7 @@ O **tc2-mfe-auth** é o microfrontend responsável pelos **fluxos de autenticaç
 
 Este módulo é carregado pelo Shell e compartilha o estado de autenticação com os demais microfrontends.
 
----
+<br />
 
 ## 🧱 Responsabilidades
 
@@ -13,14 +13,14 @@ Este módulo é carregado pelo Shell e compartilha o estado de autenticação co
 - Integração com provedor de autenticação
 - Compartilhamento de sessão com o Shell
 
----
+<br />
 
 ## 🧩 Integração
 
 Este microfrontend é consumido por:
 - [tc2-mfe-shell](https://github.com/mandi-tech/tc2-mfe-shell)
 
----
+<br />
 
 ## 🚀 Development server
 
@@ -36,7 +36,7 @@ ng serve
 ```
 O app será recarregado automaticamente ao alterar os arquivos fonte.
 
----
+<br />
 
 ## 📦 Build
 
@@ -48,7 +48,7 @@ ng build
 # Os artefatos serão gerados no diretório dist/.
 ```
 
----
+<br />
 
 ## 📘 Documentação
 
@@ -56,7 +56,7 @@ A documentação completa da arquitetura e padrões do projeto está disponível
 
 ➡️ [tc2-documentation](https://github.com/mandi-tech/tc2-documentation)
 
----
+<br />
 
 ## 📄 Licença
 
