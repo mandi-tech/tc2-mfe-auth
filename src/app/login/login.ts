@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
-import { Auth } from '../../services/auth';
+import { AuthService } from '../../services/auth';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +16,7 @@ export class Login {
   password = '';
   loading = false;
 
-  constructor(private router: Router, private auth: Auth) {}
+  constructor(private router: Router, private auth: AuthService) {}
 
   login() {
     if (!this.email || !this.password) {
