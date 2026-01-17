@@ -1,59 +1,63 @@
-# LoginApp
+# Tech Challenge - Fase 2 | MFE Auth
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.9.
+O **tc2-mfe-auth** é o microfrontend responsável pelos **fluxos de autenticação e gerenciamento de sessão** do projeto **Tech Challenge – Fase 2**.
 
-## Development server
+Este módulo é carregado pelo Shell e compartilha o estado de autenticação com os demais microfrontends.
 
-To start a local development server, run:
+<br />
+
+## 🧱 Responsabilidades
+
+- Login e logout
+- Validação de credenciais
+- Integração com provedor de autenticação
+- Compartilhamento de sessão com o Shell
+
+<br />
+
+## 🧩 Integração
+
+Este microfrontend é consumido por:
+- [tc2-mfe-shell](https://github.com/mandi-tech/tc2-mfe-shell)
+
+<br />
+
+## 🚀 Development server
+
+Este projeto foi gerado utilizando o **Angular CLI v20.3.9**.
+
+Para iniciar o servidor de desenvolvimento:
 
 ```bash
 ng serve
+
+# A aplicação estará disponível em:
+# http://localhost:4200/
 ```
+O app será recarregado automaticamente ao alterar os arquivos fonte.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+<br />
 
-## Code scaffolding
+## 📦 Build
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+Para gerar o build de produção:
 
 ```bash
 ng build
+
+# Os artefatos serão gerados no diretório dist/.
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+<br />
 
-## Running unit tests
+## 📘 Documentação
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+A documentação completa da arquitetura e padrões do projeto está disponível em:
 
-```bash
-ng test
-```
+➡️ [tc2-documentation](https://github.com/mandi-tech/tc2-documentation)
 
-## Running end-to-end tests
+<br />
 
-For end-to-end (e2e) testing, run:
+## 📄 Licença
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Projeto desenvolvido para o Tech Challenge – Fase 2.

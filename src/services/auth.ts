@@ -8,8 +8,8 @@ import { BodyUser, BodyUserResp } from '../models/user.interface';
 @Injectable({
   providedIn: 'root',
 })
-export class Auth {
-  private apiUrl = environment.apiUrl + 'user';
+export class AuthService {
+  private readonly apiUrl = `${environment.apiUrl}/user`;
   private isBrowser: boolean;
   private readonly _isLoggedIn: BehaviorSubject<boolean>;
   public readonly isLoggedIn$: Observable<boolean>;
@@ -30,7 +30,7 @@ export class Auth {
   }
 
   login(email: string, password: string): Observable<any> {
-    return this.http.post(this.apiUrl + '/auth', { email, password }).pipe(
+    return this.http.post(`${this.apiUrl}/auth`, { email, password }).pipe(
       tap((response: any) => {
         const token = response.result?.token;
 
