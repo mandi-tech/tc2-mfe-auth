@@ -1,0 +1,18 @@
+{
+    "routes": [
+        {
+            "route": "/remoteEntry.js",
+            "headers": {
+                "Access-Control-Allow-Origin": "https://kind-island-08e8ca90f.6.azurestaticapps.net",
+                "Access-Control-Allow-Methods": "GET, OPTIONS"
+            }
+        },
+        {
+            "route": "/*.js",
+            "headers": {
+                "Access-Control-Allow-Origin": "https://kind-island-08e8ca90f.6.azurestaticapps.net",
+                "Access-Control-Allow-Methods": "GET, OPTIONS"
+            }
+        }
+    ]
+}
