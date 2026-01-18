@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
-import { Auth } from '../../services/auth';
+import { AuthService } from '../../services/auth';
 
 @Component({
   selector: 'app-novo-usuario',
@@ -17,7 +17,7 @@ export class NovoUsuario {
   password = '';
   loading = false;
 
-  constructor(private router: Router, private auth: Auth) {}
+  constructor(private router: Router, private auth: AuthService) {}
 
   criaNovoUsuario() {
     if (!this.email || !this.password || !this.username) {
