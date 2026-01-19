@@ -13,7 +13,7 @@ type LoginResponse = {
   };
 };
 
-// Ajuste conforme o payload real do seu JWT
+// Ajustado confome JWT padrão
 type JwtPayload = {
   id?: string;
   username?: string;
